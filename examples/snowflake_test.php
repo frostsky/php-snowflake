@@ -1,18 +1,20 @@
 <?php
 /**
- * @authors Leon Peng (leon.peng@live.com)
- * @date    2016-08-24 17:36:04
+ * @authors frostsky (dongshimin@frostsky.com)
+ * @date    2017-12-04 17:36:04
  *
  * @version $Id$
  */
 require 'vendor/autoload.php';
-use \Leon2012\Snowflake\Snowflake;
+use \Snowflake\Snowflake;
 
-$snowflake = new Snowflake(1);
 $st = microtime(true);
 
+$snowflake = Snowflake::getInstance(mt_rand(1, 1023));
+
 for ($i = 0; $i < 10000; ++$i) {
-    $id = $snowflake->next();
+    $id = $snowflake->nextId();
     echo "{$id}\n";
 }
+
 echo 'time:'.(microtime(true) - $st)."\n";

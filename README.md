@@ -5,11 +5,11 @@ php snowflake implment.
 usage:
 
 ```
-composer.phar require leon2012/snowflake dev-master
+composer require frostsky/snowflake dev-master
 
 require 'vendor/autoload.php';
-use \Leon2012\Snowflake\Snowflake;
+use \Snowflake\Snowflake;
 
-$snowflake = new Snowflake(1);
-echo $snowflake->next();
+$snowflake = Snowflake::getInstance(1);
+echo $snowflake->nextId();
 ```
