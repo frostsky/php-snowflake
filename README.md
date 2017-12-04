@@ -5,7 +5,7 @@ php snowflake implment.
 usage:
 
 ```
-composer require frostsky/snowflake dev-master
+composer require frostsky/php-snowflake dev-master
 
 require 'vendor/autoload.php';
 use \Snowflake\Snowflake;
