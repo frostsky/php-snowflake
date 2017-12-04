@@ -1,7 +1,7 @@
 <?php
 /**
- * @authors Leon Peng (leon.peng@live.com)
- * @date    2016-08-24 16:58:02
+ * @authors frostsky (dongshimin@frostsky.com)
+ * @date    2017-12-04 17:52:48
  *
  * @version $Id$
  */
